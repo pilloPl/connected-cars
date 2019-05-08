@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: amq.topic
+          binder: rabbit
+          group: messages-consumer-group
+      rabbit:
+        bindings:
+          input:
+            consumer:
+              queueNameGroupOnly: true
+
+  rabbitmq:
+    password: pass
+    username: user
