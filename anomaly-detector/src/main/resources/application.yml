@@ -12,12 +12,9 @@ spring:
         bindings:
           anomalies:
             producer:
-              routing-key-expression: "'.anomalies'"
           breaking:
             consumer:
               queueNameGroupOnly: true
-              bindingRoutingKey: ".breaking"
-
   rabbitmq:
     password: pass
     username: user
