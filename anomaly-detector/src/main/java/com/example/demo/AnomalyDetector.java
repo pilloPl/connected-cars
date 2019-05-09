@@ -14,6 +14,8 @@ import org.springframework.messaging.support.GenericMessage;
 @EnableBinding(Channels.class)
 public class AnomalyDetector {
 
+    private final Channels channels;
+
     public AnomalyDetector(Channels channels) {
         this.channels = channels;
     }
@@ -22,25 +24,30 @@ public class AnomalyDetector {
         SpringApplication.run(AnomalyDetector.class, args);
     }
 
-    private final Channels channels;
 
     @StreamListener("breaking")
-    public void msg2(int decelaration) {
+    public void anomalyDetector(int decelaration) {
+        //complex logic
+        //stateful processor
+        //taling to internal db
+        //etc
+
         if(decelaration > 30) {
-            System.out.println("CRASH");
-            channels.anomalies().send(new GenericMessage<>("anomaly"));
+            System.out.println("WOT?");
+            channels.anomalies().send(new GenericMessage<>("WOOT?"));
         }
+
     }
+
 
 }
 
 
 interface Channels {
 
-    @Output("anomalies")
-    MessageChannel anomalies();
-
     @Input("breaking")
     SubscribableChannel breaking();
 
+    @Output("anomalies")
+    MessageChannel anomalies();
 }

@@ -5,14 +5,13 @@ spring:
         input:
           destination: amq.topic
           binder: rabbit
-          group: messages-consumer-group
+          group: consumer-group-marcin
       rabbit:
         bindings:
           input:
             consumer:
               queueNameGroupOnly: true
-            producer:
-              routing-key-expression: '".my.topic"'
+              bindingRoutingKey: ".cars.marcin"
   rabbitmq:
     password: pass
     username: user

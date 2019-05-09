@@ -15,9 +15,7 @@ public class SpringCloudStreamApplication {
     }
 
     @StreamListener(Sink.INPUT)
-    public void msg(String msg) {
-        System.out.println(msg);
+    public void handle(String message) {
+        System.out.println(message);
     }
-
-
 }
