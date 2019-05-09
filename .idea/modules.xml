@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/anomaly-detector/anomaly-detector.iml" filepath="$PROJECT_DIR$/anomaly-detector/anomaly-detector.iml" />
       <module fileurl="file://$PROJECT_DIR$/apps.iml" filepath="$PROJECT_DIR$/apps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic-scs/basic-scs.iml" filepath="$PROJECT_DIR$/basic-scs/basic-scs.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic-spring-integration/basic-spring-integration.iml" filepath="$PROJECT_DIR$/basic-spring-integration/basic-spring-integration.iml" />
-      <module fileurl="file://$PROJECT_DIR$/basic-scs/demo.iml" filepath="$PROJECT_DIR$/basic-scs/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scs-multichannel/scs-multichannel.iml" filepath="$PROJECT_DIR$/scs-multichannel/scs-multichannel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/anomaly-detector/scs-multichannel (1).iml" filepath="$PROJECT_DIR$/anomaly-detector/scs-multichannel (1).iml" />
     </modules>
   </component>
 </project>

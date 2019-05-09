@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        anomalies:
+          destination: amq.topic
+          binder: rabbit
+        breaking:
+          destination: amq.topic
+          binder: rabbit
+      rabbit:
+        bindings:
+          anomalies:
+            producer:
+              routing-key-expression: "'.anomalies'"
+          breaking:
+            consumer:
+              queueNameGroupOnly: true
+              bindingRoutingKey: ".breaking"
+
+  rabbitmq:
+    password: pass
+    username: user

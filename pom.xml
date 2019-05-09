@@ -14,7 +14,8 @@
 	<modules>
 		<module>basic-spring-integration</module>
 		<module>basic-scs</module>
-
+		<module>scs-multichannel</module>
+		<module>anomaly-detector</module>
 	</modules>
 
 </project>

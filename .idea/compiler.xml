@@ -16,14 +16,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="anomaly-detector" />
+        <module name="basic-scs" />
         <module name="basic-spring-integration" />
-        <module name="demo" />
+        <module name="scs-multichannel" />
+        <module name="scs-multichannel (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="anomaly-detector" target="1.8" />
       <module name="apps" target="1.5" />
+      <module name="basic-scs" target="1.8" />
       <module name="basic-spring-integration" target="1.8" />
-      <module name="demo" target="1.8" />
+      <module name="scs-multichannel" target="1.8" />
+      <module name="scs-multichannel (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
