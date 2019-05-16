@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        temperature:
+          destination: amq.topic
+          binder: rabbit
+        breaking:
+          destination: amq.topic
+          binder: rabbit
+      rabbit:
+        bindings:
+          temperature:
+            consumer:
+              queueNameGroupOnly: true
+              bindingRoutingKey: ".temperature"
+          breaking:
+            consumer:
+              queueNameGroupOnly: true
+              bindingRoutingKey: ".breaking"
+
+  rabbitmq:
+    password: pass
+    username: user
