@@ -27,7 +27,7 @@
 
  `java -jar spring-cloud-skipper-server-2.0.0.RELEASE.jar`
  
- `java -jar spring-cloud-dataflow-server-2.0.1.RELEASE.jar`
+ `java -jar spring-cloud-dataflow-server-2.0.0.RELEASE.jar`
  
  `java -jar spring-cloud-dataflow-shell-2.0.0.RELEASE.jar`
  
